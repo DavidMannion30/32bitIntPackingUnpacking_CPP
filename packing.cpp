@@ -1,7 +1,4 @@
-#include <cstdint>      // for cpp
-// #include <stdint.h>  // for C
-// #include <stdio.h>
-// #include <stdlib.h>
+#include <cstdint>      
 #include "packing.h"
 #include <iostream>
 
@@ -46,10 +43,6 @@ int main()
     uint16_t orderRec = 0;
 
     unpack(message, exchRec, idRec, orderRec);
-
-    // printf("%d\n", exchRec);
-    // printf("%d\n", idRec);
-    // printf("%d\n", orderRec);
 
     cout << (int)exchRec << endl;                // uint8_t is a char, convert back to int to print
     cout << (int)idRec << endl;
